@@ -1,10 +1,5 @@
-import { Lobster } from "next/font/google";
+import {lobster} from "./../app/fonts.ts";
 
-const lobster = Lobster({
-	weight: "400",
-	subsets: ["latin"],
-	display: "swap",
-});
 const Hero = () => {
 	return (
 		<section

@@ -13,7 +13,7 @@ export default {
         foreground: "var(--foreground)",
         "white":"#FFFFFF",
         "rich-black":"#121212",
-        "very-pale-orange": "#FFF4D8",
+        "pale-orange": "#FFF4D8",
         "orange":"#F39C11",
         "dark-blue":"#0D1015",
         "dark-gray":"#555555",
