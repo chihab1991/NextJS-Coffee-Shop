@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import {useState} from "react";
+
 import logo from "./../../public/img/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FiShoppingCart } from "react-icons/fi";
@@ -12,12 +13,13 @@ const Header = () => {
 
 const [openMenu, setOpenMenu] = useState(false)
 	return (
-		<header className="fixed w-full left-0 top-0  text-white ">
-			<nav className="bg-gradient-to-b from-rich-black  via-rich-black/60 via-52% to-rich-black/0 max-w-[1512px] flex justify-between items-center mx-auto py-6 xl:py-10 px-4 lg:px-12">
+		<header className="fixed w-full left-0 top-0  text-white">
+		<div className=" bg-gradient-to-b from-rich-black  via-rich-black/60 via-52% to-rich-black/0">
+			<nav className=" max-w-[1512px] flex justify-between items-center mx-auto py-6 xl:py-10 px-4 lg:px-12">
 				<div className="flex items-center">
-					<Link href="#" className="text-3xl md:text-4xl mr-4 lg:hidden suration-700" onClick={()=>{setOpenMenu(!openMenu)}}>
+					<div className="cursor-pointer text-3xl md:text-4xl mr-4 lg:hidden suration-700" onClick={()=>{setOpenMenu(!openMenu)}}>
 						{ openMenu ? <MdOutlineClose /> : <GiHamburgerMenu /> }
-					</Link>
+					</div>
 					<Link href="#hero" className="w-28 md:w-32 lg:w-40">
 						<Image src={logo} alt="coffee shop logo"/>
 					</Link>
@@ -38,6 +40,7 @@ const [openMenu, setOpenMenu] = useState(false)
 					</Link>
 				</div>
 			</nav>
+			</div>
 			<div className={`bg-gradient-to-b from-rich-black/0  via-rich-black/60 via-52% to-rich-black flex flex-col space-y-12 min-w-full text-center text-3xl text-pale-orange py-10 lg:hidden ${openMenu ? "translate-x-0" : "-translate-x-full" } duration-700 z-[100] `}>
 				<Link href="#hero">Home</Link>
 				<Link href="#about">About Us</Link>
