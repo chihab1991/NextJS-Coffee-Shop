@@ -1,4 +1,4 @@
-import {lobster} from "./../app/fonts.ts";
+import {lobster} from "./../app/fonts";
 
 const Hero = () => {
 	return (

@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "./../../public/img/logo.png";
 import {
-	FaXTwitter,
 	FaFacebook,
 	FaSquareWhatsapp,
 	FaInstagram,
@@ -20,7 +19,7 @@ const Contact = () => {
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:items-stretch gap-x-8 lg:gap-x-12">
 					<div className="mb-12 lg:mb-0">
 						<Image src={logo} alt="coffee shop logo" className="w-40 xl:w-52 mb-12 lg:mb-8" />
-		
+
 						<p className="text-[15px] leading-6 mb-4 xl:text-xl xl:leading-8">
 							There are people who can&apos;t start their day without having a
 							freshly brewed cup of coffee and we understand them
@@ -46,13 +45,13 @@ const Contact = () => {
 							</Link>
 						</div>
 					</div>
-					
+
 					<div className="mb-10 lg:mb-0 lg:mt-6">
 						<h3 className="text-xl xl:text-2xl font-bold mb-6">Contact Us</h3>
 						<div className="flex items-center gap-x-6 mb-4">
-						
+
 							<PiMapPinBold className="text-2xl" />
-							
+
 							<p className="text-[15px] xl:text-[21px]">72, Wall street, King Road, NY 20110</p>
 						</div>
 						<div className="flex items-center gap-x-6 mb-4">
@@ -64,7 +63,7 @@ const Contact = () => {
 							<p className="text-[15px] xl:text-[21px]">ngopiloer@gmail.com</p>
 						</div>
 					</div>
-					
+
 					<div className="md:col-span-2 lg:col-span-1 lg:mt-6">
 						<h3 className="text-xl xl:text-2xl font-bold mb-4">Subscribe To Newsletter</h3>
 						<form className="mb-6">
@@ -73,7 +72,7 @@ const Contact = () => {
 						</form>
 						<p className="italic text-[15px] xl:text-xl leading-[1.1rem]">Sign up with your email address to receive news and updates.</p>
 					</div>
-				</div>			
+				</div>
 			</div>
 		</section>
 	);
