@@ -12,6 +12,9 @@ import { MdOutlineClose } from "react-icons/md";
 const Header = () => {
 
 const [openMenu, setOpenMenu] = useState(false)
+	const handleClick = ()=>{
+		setOpenMenu(false)
+	}
 	return (
 		<header className="fixed w-full left-0 top-0  text-white">
 		<div className=" bg-gradient-to-b from-rich-black  via-rich-black/60 via-52% to-rich-black/0">
@@ -42,11 +45,11 @@ const [openMenu, setOpenMenu] = useState(false)
 			</nav>
 			</div>
 			<div className={`bg-gradient-to-b from-rich-black/0  via-rich-black/60 via-52% to-rich-black flex flex-col space-y-12 min-w-full text-center text-3xl text-pale-orange py-10 lg:hidden ${openMenu ? "translate-x-0" : "-translate-x-full" } duration-700 z-[100] `}>
-				<Link href="#hero">Home</Link>
-				<Link href="#about">About Us</Link>
-				<Link href="#features">Features</Link>
-				<Link href="#menu">Our Menu</Link>
-				<Link href="#contact">Contact Us</Link>
+				<Link href="#hero" onClick={handleClick}>Home</Link>
+				<Link href="#about" onClick={handleClick}>About Us</Link>
+				<Link href="#features" onClick={handleClick}>Features</Link>
+				<Link href="#menu" onClick={handleClick}>Our Menu</Link>
+				<Link href="#contact" onClick={handleClick}>Contact Us</Link>
 			</div>
 		</header>
 	);
